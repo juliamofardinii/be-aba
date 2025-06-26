@@ -3,7 +3,7 @@
 import "../styles/globals.css";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // icones
+import { Menu, X } from "lucide-react"; // ícones
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full h-[60px] bg-[var(--color-neutral-secondary)] flex justify-between items-center px-15">
+    <header className="w-full h-[60px] bg-[var(--color-background)] flex justify-between items-center px-15 rounded-b-4xl relative z-50">
       <div>
         <Image src="/logoBeAba.jpg" alt="Logo Be Aba" width={50} height={40} />
       </div>
@@ -40,7 +40,7 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <div className="absolute top-[60px] right-0 bg-[var(--color-neutral-secondary)] w-1/2 h-screen flex flex-col gap-8 p-6 text-[var(--color-primary)] font-semibold shadow-lg md:hidden">
+        <div className="absolute top-[60px] right-0 bg-[var(--color-neutral-secondary)] w-1/2 h-screen flex flex-col gap-8 p-6 text-[var(--color-primary)] font-semibold rounded-bl-5xl md:hidden">
           <p className="cursor-pointer" onClick={toggleMenu}>
             Home
           </p>

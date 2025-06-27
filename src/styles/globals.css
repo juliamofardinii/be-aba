@@ -3,9 +3,10 @@
 
 :root {
   --color-primary: #00b3b3;
+  --color-secondary: #ffca64;
   --color-neutral-secondary: #ffff;
   --color-btn-primary: #fecf58;
-  --color-secondary: #444444;
+  --color-secondary-details: #f8ad94;
   --radius: 0.625rem;
   --background: #fafafa;
   --foreground: oklch(0.141 0.005 285.823);

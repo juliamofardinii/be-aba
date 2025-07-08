@@ -1,13 +1,15 @@
 import Header from "../components/header";
 import HeroSection from "../components/heroSection";
-import AbotUs from "@/components/about";
+import Services from "@/components/services";
+import About from "@/components/aboutUs";
 
 export default function Home() {
   return (
     <main className="">
       <Header />
       <HeroSection />
-      <AbotUs />
+      <Services />
+      <About />
     </main>
   );
 }

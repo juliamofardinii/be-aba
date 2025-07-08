@@ -1,9 +1,9 @@
 import Image from "next/image";
 import "../styles/globals.css";
 
-export default function AbotUs() {
+export default function Services() {
   return (
-    <div className="relative w-full p-10 overflow-hidden rounded-xl">
+    <div className="relative w-full p-10 pt-0 overflow-hidden rounded-xl">
       <Image
         src="/sectionFundo.jpg"
         alt="Menina brincando"
@@ -19,8 +19,8 @@ export default function AbotUs() {
       </h1>
 
       {/* Container dos ícones centralizado */}
-      <div className="absolute flex gap-20 -translate-x-1/2 top-45 left-1/2">
-        <div className="flex flex-col items-center">
+      <div className="absolute flex gap-1 -translate-x-1/2 top-45 left-1/2">
+        <div className="flex flex-col items-center w-40">
           <div className="rounded-full bg-[var(--color-secondary)] h-20 w-20 flex items-center justify-center">
             <Image
               src="/brain.png"
@@ -36,7 +36,7 @@ export default function AbotUs() {
         </div>
 
         {/* Ícone 2 */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-40">
           <div className="rounded-full bg-[var(--color-secondary)] h-20 w-20 flex items-center justify-center">
             <Image
               src="/blocks (2).png"
@@ -52,7 +52,7 @@ export default function AbotUs() {
         </div>
 
         {/* Ícone 3 */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-40">
           <div className="rounded-full bg-[var(--color-secondary)] h-20 w-20 flex items-center justify-center">
             <Image
               src="/pyramid.png"
@@ -68,7 +68,7 @@ export default function AbotUs() {
         </div>
 
         {/* Ícone 4 */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-40">
           <div className="rounded-full bg-[var(--color-secondary)] h-20 w-20 flex items-center justify-center">
             <Image
               src="/balao-de-fala.png"
@@ -84,7 +84,7 @@ export default function AbotUs() {
         </div>
 
         {/* Ícone 5 */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-40">
           <div className="rounded-full bg-[var(--color-secondary)] h-20 w-20 flex items-center justify-center">
             <Image
               src="/movimento.png"
@@ -100,7 +100,7 @@ export default function AbotUs() {
         </div>
 
         {/* Ícone 6 */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center w-40">
           <div className="rounded-full bg-[var(--color-secondary)] h-20 w-20 flex items-center justify-center">
             <Image
               src="/cerebro-humano.png"

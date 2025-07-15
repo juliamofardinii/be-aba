@@ -3,15 +3,23 @@
 import Image from "next/image";
 // import { Card, CardContent } from "@/components/ui/card";
 import {} from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function About() {
-  // const fotosClinica = [
-  //   "/fotoClinica.jpg",
-  //   "/foto-clinica2.jpg",
-  //   "/fotoClinica3.jpg",
-  //   "/fotoClinica4.jpg",
-  //   "/fotoClinica5.jpg",
-  // ];
+  const fotosClinica = [
+    "/fotoClinica.jpg",
+    "/foto-clinica2.jpg",
+    "/fotoClinica3.jpg",
+    "/fotoClinica4.jpg",
+    "/fotoClinica5.jpg",
+  ];
 
   return (
     <div className="flex flex-col items-center gap-10 p-10 pt-0">
@@ -19,12 +27,18 @@ export default function About() {
         Sobre nós
       </h1>
 
-      <div className="flex flex-row gap-6 max-w-[1000px] w-full">
+      <div className="flex flex-col-reverse items-center w-full gap-12 md:flex-row">
         {/* Carrossel com 3 fotos visíveis */}
-        {/* <Carousel opts={{ align: "start" }} className="w-full max-w-[650px]">
+        <Carousel
+          opts={{ align: "start" }}
+          className="w-full lg:max-w-[700px] md:max-w-[400px] "
+        >
           <CarouselContent>
             {fotosClinica.map((src, i) => (
-              <CarouselItem key={i} className="p-1 md:basis-1/2 lg:basis-1/2">
+              <CarouselItem
+                key={i}
+                className="pl-5 lg:basis-1/2 md:basis-1/1 basis-1/2 "
+              >
                 <Card className="relative overflow-hidden aspect-square rounded-2xl">
                   <CardContent className="p-0">
                     <Image
@@ -41,15 +55,15 @@ export default function About() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="absolute left-[-24px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+          <CarouselPrevious className="absolute left-[-20px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
             ‹
           </CarouselPrevious>
           <CarouselNext className="absolute right-[-24px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
             ›
           </CarouselNext>
-        </Carousel> */}
+        </Carousel>
 
-        <div>
+        {/* <div>
           <Image
             src="/sobre-nos.png"
             alt="TO"
@@ -58,11 +72,11 @@ export default function About() {
             quality={100}
             className="object-contain"
           />
-        </div>
+        </div> */}
 
         {/* Texto ao lado */}
-        <div className="ml-6 space-y-8 max-w-[400px]">
-          <div className="space-y-3">
+        <div className="ml-6 xl:space-y-12 lg:space-y-8  space-y-3  md:space-y-12 max-w-[400px] ">
+          <div className="xl:space-y-4 lg:space-y-2 md:space-y-6">
             <h2 className="text-xl font-semibold text-neutral-700">
               Lorem Ipsum is not{" "}
               <span className="text-[#FFA500] font-bold">
@@ -70,25 +84,27 @@ export default function About() {
               </span>
             </h2>
 
-            <p className="text-md text-neutral-700">
+            <p className="lg:text-md md:text-sm text-neutral-700">
               If you are going to use a passage of Lorem Ipsum, you need to be
               sure there isnt.
             </p>
           </div>
 
-          <div className="space-y-8">
-            <div className="flex flex-row gap-8">
-              <div className="relative w-[50px] h-[30px]">
+          <div className="space-y-2 xl:space-y-8 lg:space-y-3 md:space-y-8">
+            <div className="flex flex-row items-center gap-8 ">
+              <div className="flex relative w-[60px] h-[40px] ">
                 <Image
                   src="/target (1).png"
                   alt="icone target"
-                  fill
+                  width={60}
+                  height={40}
                   quality={100}
                   priority
+                  className="object-contain"
                 />
               </div>
               <div>
-                <p>Contrary to popular</p>
+                <p className="text-base">Contrary to popular</p>
                 <p className="text-sm text-neutral-700">
                   All the Lorem Ipsum generators on the Internet tend to repeat
                   predefined chunks as necessary.
@@ -96,18 +112,20 @@ export default function About() {
               </div>
             </div>
 
-            <div className="flex flex-row gap-5">
-              <div className="relative w-[50px] h-[30px]">
+            <div className="flex flex-row items-center gap-8">
+              <div className="relative w-[60px] h-[40px]">
                 <Image
                   src="/maternity.png"
                   alt="icone maternity"
-                  fill
+                  width={60}
+                  height={40}
                   quality={100}
                   priority
+                  className="object-contain"
                 />
               </div>
               <div>
-                <p>Contrary to popular</p>
+                <p className="text-base">Contrary to popular</p>
                 <p className="text-sm text-neutral-700">
                   All the Lorem Ipsum generators on the Internet tend to repeat
                   predefined chunks as necessary.

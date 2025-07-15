@@ -69,7 +69,7 @@ export default function Services() {
 
       {/* 🟢 GRID para mobile e desktop */}
       {/* 🟢 GRID para mobile e desktop */}
-      <div className="absolute grid grid-cols-2 -translate-x-1/2 sm:grid-cols-3 md:hidden xl:flex xl:justify-center xl:gap-12 xl:w-full xl:top-35 top-18 left-1/2 gap-x-4 gap-y-6 w-max">
+      <div className="relative grid grid-cols-2 -translate-x-1/2 xl:absolute pb-15 sm:grid-cols-3 md:hidden xl:flex xl:justify-center xl:gap-12 xl:w-full xl:top-35 top-18 left-1/2 gap-x-4 gap-y-6 w-max">
         {services.map((service, index) => (
           <div key={index} className="flex flex-col items-center w-36">
             <div className="rounded-full bg-[var(--color-secondary)] w-14 h-14 xl:h-20 xl:w-20 flex items-center justify-center hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.8)] transition-transform duration-300">

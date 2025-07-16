@@ -12,6 +12,7 @@ export default function Home() {
       <Services />
       <About />
       <OurTeam />
+      {/* <HealthInsurance /> */}
     </main>
   );
 }

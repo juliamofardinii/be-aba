@@ -36,7 +36,6 @@ export default function Services() {
         Nossos Serviços
       </h1>
 
-      {/* 🟡 CARROSSEL para tablet e laptop */}
       <div className="absolute w-full max-w-[190px] -translate-x-1/2 lg:max-w-3xl md:max-w-lg md:top-25 lg:top-30 left-1/2 md:block xl:hidden top-10 hidden">
         <Carousel opts={{ align: "start" }} className="w-full">
           <CarouselContent className="">
@@ -67,8 +66,6 @@ export default function Services() {
         </Carousel>
       </div>
 
-      {/* 🟢 GRID para mobile e desktop */}
-      {/* 🟢 GRID para mobile e desktop */}
       <div className="relative grid grid-cols-2 -translate-x-1/2 xl:absolute pb-15 sm:grid-cols-3 md:hidden xl:flex xl:justify-center xl:gap-12 xl:w-full xl:top-35 top-18 left-1/2 gap-x-4 gap-y-6 w-max">
         {services.map((service, index) => (
           <div key={index} className="flex flex-col items-center w-36">

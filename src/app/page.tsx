@@ -6,7 +6,7 @@ import OurTeam from "@/components/ourTeam";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="max-w-[1272px] mx-auto">
       <Header />
       <HeroSection />
       <Services />

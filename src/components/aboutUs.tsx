@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-// import { Card, CardContent } from "@/components/ui/card";
-import {} from "@/components/ui/carousel";
 import {
   Carousel,
   CarouselContent,
@@ -23,21 +21,21 @@ export default function About() {
 
   return (
     <div className="flex flex-col items-center gap-10 p-10 pt-0">
-      <h1 className="text-4xl font-bold text-[var(--color-primary)]">
+      <h1 className="text-3xl sm:text-4xl lg:text-[35px] xl:text-5xl font-bold text-[var(--color-primary)]">
         Sobre nós
       </h1>
 
-      <div className="flex flex-col-reverse items-center w-full gap-12 md:flex-row">
+      <div className="flex flex-col items-center w-full gap-12 md:flex-row">
         {/* Carrossel com 3 fotos visíveis */}
         <Carousel
           opts={{ align: "start" }}
-          className="w-full lg:max-w-[700px] md:max-w-[400px] "
+          className="w-full lg:max-w-[700px] md:max-w-[400px]"
         >
           <CarouselContent>
             {fotosClinica.map((src, i) => (
               <CarouselItem
                 key={i}
-                className="pl-5 lg:basis-1/2 md:basis-1/1 basis-1/2 "
+                className="pl-5 lg:basis-1/2 md:basis-1/1 basis-1/2"
               >
                 <Card className="relative overflow-hidden aspect-square rounded-2xl">
                   <CardContent className="p-0">
@@ -63,36 +61,25 @@ export default function About() {
           </CarouselNext>
         </Carousel>
 
-        {/* <div>
-          <Image
-            src="/sobre-nos.png"
-            alt="TO"
-            width={580}
-            height={300}
-            quality={100}
-            className="object-contain"
-          />
-        </div> */}
-
         {/* Texto ao lado */}
-        <div className="ml-6 xl:space-y-12 lg:space-y-8  space-y-3  md:space-y-12 max-w-[400px] ">
+        <div className="ml-6 xl:space-y-12 lg:space-y-8 space-y-3 md:space-y-12 max-w-[400px]">
           <div className="xl:space-y-4 lg:space-y-2 md:space-y-6">
-            <h2 className="text-xl font-semibold text-neutral-700">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-neutral-700">
               Lorem Ipsum is not{" "}
               <span className="text-[#FFA500] font-bold">
                 simply random text
               </span>
             </h2>
 
-            <p className="lg:text-md md:text-sm text-neutral-700">
+            <p className="lg:text-md sm:text-lg md:text-sm text-neutral-700">
               If you are going to use a passage of Lorem Ipsum, you need to be
-              sure there isnt.
+              sure there isn’t.
             </p>
           </div>
 
           <div className="space-y-2 xl:space-y-8 lg:space-y-3 md:space-y-8">
-            <div className="flex flex-row items-center gap-8 ">
-              <div className="flex relative w-[60px] h-[40px] ">
+            <div className="flex flex-row items-center gap-8">
+              <div className="flex relative w-[60px] h-[40px]">
                 <Image
                   src="/target (1).png"
                   alt="icone target"
@@ -104,8 +91,10 @@ export default function About() {
                 />
               </div>
               <div>
-                <p className="text-base">Contrary to popular</p>
-                <p className="text-sm text-neutral-700">
+                <p className="text-base sm:text-lg lg:text-[18px]">
+                  Contrary to popular
+                </p>
+                <p className="text-sm sm:text-base text-neutral-700">
                   All the Lorem Ipsum generators on the Internet tend to repeat
                   predefined chunks as necessary.
                 </p>
@@ -125,8 +114,10 @@ export default function About() {
                 />
               </div>
               <div>
-                <p className="text-base">Contrary to popular</p>
-                <p className="text-sm text-neutral-700">
+                <p className="text-base sm:text-lg lg:text-[18px]">
+                  Contrary to popular
+                </p>
+                <p className="text-sm sm:text-base text-neutral-700">
                   All the Lorem Ipsum generators on the Internet tend to repeat
                   predefined chunks as necessary.
                 </p>

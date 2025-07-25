@@ -9,7 +9,7 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "Be Aba",
+  title: "beAba",
 };
 
 export default function RootLayout({

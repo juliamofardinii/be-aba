@@ -21,7 +21,7 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="relative w-full pb-10 lg:pb-10 p-10 lg:p-0">
+    <div className="relative w-full p-10 pb-10 lg:pb-10 lg:p-0">
       <Image
         src="/sectionFundo.jpg"
         alt="Menina brincando"
@@ -66,10 +66,10 @@ export default function Services() {
         </Carousel>
       </div>
 
-      <div className="relative grid grid-cols-2 -translate-x-1/2 xl:absolute pb-15 sm:grid-cols-2 md:hidden xl:flex xl:justify-center xl:gap-2 xl:w-full xl:top-35 top-15 left-1/2  gap-y-6 w-max">
+      <div className="relative grid grid-cols-2 -translate-x-1/2 xl:absolute pb-15 sm:grid-cols-2 md:hidden xl:flex xl:justify-center xl:gap-2 xl:w-full xl:top-35 top-15 left-1/2 gap-y-6 w-max">
         {services.map((service, index) => (
-          <div key={index} className="flex flex-col items-center md:w-50 w-40">
-            <div className="rounded-full bg-[var(--color-secondary)] w-14 h-14 xl:h-20 xl:w-20 flex items-center justify-center hover:scale-105 shadow-[0_0_15px_rgba(255,255,255,0.8)] transition-transform duration-300">
+          <div key={index} className="flex flex-col items-center w-40 md:w-50">
+            <div className="rounded-full bg-[var(--color-secondary)] w-14 h-14 xl:h-18 xl:w-18 flex items-center justify-center hover:scale-105 transition-transform duration-300">
               <Image
                 src={service.src}
                 alt={service.alt}
@@ -78,7 +78,7 @@ export default function Services() {
                 className="object-contain w-6 h-6 md:w-5 md:h-5 lg:w-10 lg:h-10"
               />
             </div>
-            <span className="mt-2 font-semibold text-center text-neutral-700 text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px]">
+            <span className="mt-2 font-semibold text-center text-neutral-700 text-[14px] md:text-[16px]  ">
               {service.label}
             </span>
           </div>

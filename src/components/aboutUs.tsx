@@ -21,7 +21,7 @@ export default function About() {
 
   return (
     <div className="flex flex-col items-center gap-10 p-10 pt-0">
-      <h1 className="text-3xl md:text-4xl lg:text-[35px] xl:text-5xl font-bold text-[var(--color-primary)]">
+      <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
         Sobre nós
       </h1>
 
@@ -63,15 +63,15 @@ export default function About() {
 
         {/* Texto ao lado */}
         <div className="ml-6 xl:space-y-12 lg:space-y-8 space-y-3 md:space-y-12 max-w-[400px]">
-          <div className="xl:space-y-4 lg:space-y-2 md:space-y-6">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-neutral-700">
+          <div className="xl:space-y-1 lg:space-y-2 md:space-y-4">
+            <h2 className="font-semibold sm:text-2xl lg:text-xl xl:text-[24px] text-neutral-700">
               Lorem Ipsum is not{" "}
-              <span className="text-[#FFA500] font-bold">
+              <span className="text-[#FFA500] font-bold ">
                 simply random text
               </span>
             </h2>
 
-            <p className="lg:text-md sm:text-lg md:text-sm text-neutral-700">
+            <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700">
               If you are going to use a passage of Lorem Ipsum, you need to be
               sure there isn’t.
             </p>
@@ -91,10 +91,10 @@ export default function About() {
                 />
               </div>
               <div>
-                <p className="text-base sm:text-lg lg:text-[18px]">
+                <p className="text-base md:text-[14px] lg:text-[18px]">
                   Contrary to popular
                 </p>
-                <p className="text-sm md:text-base text-neutral-700">
+                <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700">
                   All the Lorem Ipsum generators on the Internet tend to repeat
                   predefined chunks as necessary.
                 </p>
@@ -114,10 +114,10 @@ export default function About() {
                 />
               </div>
               <div>
-                <p className="text-base sm:text-lg lg:text-[18px]">
+                <p className="text-base md:text-[14px] lg:text-[18px]">
                   Contrary to popular
                 </p>
-                <p className="text-sm sm:text-base text-neutral-700">
+                <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700">
                   All the Lorem Ipsum generators on the Internet tend to repeat
                   predefined chunks as necessary.
                 </p>

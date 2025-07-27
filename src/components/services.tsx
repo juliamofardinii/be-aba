@@ -33,7 +33,7 @@ export default function Services() {
       />
 
       <h1 className="absolute text-[26px] md:text-4xl lg:text-[35px]  font-bold xl:top-15 lg:top-10 md:top-15 left-1/2 -translate-x-1/2 text-[var(--color-primary)] top-2  whitespace-nowrap">
-        Nossos Serviços
+        Nossos serviços
       </h1>
 
       <div className="absolute w-full max-w-[190px] -translate-x-1/2 lg:max-w-3xl md:max-w-lg md:top-30 lg:top-30 left-1/2 md:block xl:hidden top-10 hidden">

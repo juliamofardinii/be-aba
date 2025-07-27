@@ -5,6 +5,7 @@ import About from "@/components/aboutUs";
 import OurTeam from "@/components/ourTeam";
 import Feedback from "@/components/feedback";
 import HealthInsurance from "@/components/healthInsurance";
+import Aba from "@/components/aba";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HeroSection />
       <Services />
       <About />
+      <Aba />
       <OurTeam />
       <Feedback />
       <HealthInsurance />

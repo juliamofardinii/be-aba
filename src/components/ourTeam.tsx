@@ -55,7 +55,7 @@ export default function OurTeam() {
 function TeamMember({ name, role }: { name: string; role: string }) {
   return (
     <div className="max-w-[200px]">
-      <div className="flex items-center justify-center transition-transform duration-300 bg-white rounded-full h-28 w-28 md:h-32 md:w-32 lg:h-45 lg:w-45 hover:scale-105">
+      <div className="flex items-center justify-center transition-transform duration-300 h-28 w-28 md:h-32 md:w-32 lg:h-45 lg:w-45 hover:scale-105">
         <Image
           src="/homem.png"
           alt="membro"

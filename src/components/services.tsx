@@ -23,7 +23,7 @@ export default function Services() {
   return (
     <div className="relative w-full p-10 pb-10 lg:pb-10 lg:p-0">
       <Image
-        src="/sectionFundo.jpg"
+        src="/sectionFundo.png"
         alt="Menina brincando"
         width={1100}
         height={700}

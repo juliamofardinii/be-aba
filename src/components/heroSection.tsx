@@ -28,7 +28,7 @@ export default function HeroSection() {
 
       <div className="w-full max-w-[500px] mx-auto md:w-[350px] lg:w-full ">
         <Image
-          src="/heroSectionPrincipal.jpg"
+          src="/heroSectionKids.png"
           alt="Menina brincando"
           width={500}
           height={300}

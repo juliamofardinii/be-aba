@@ -11,16 +11,27 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full h-[60px] bg-[var(--color-background)] flex justify-between items-center px-15 rounded-b-4xl relative z-50">
+    <header className="w-full h-[60px] bg-[var(--color-background)] flex justify-between items-center px-10 rounded-b-4xl relative z-50">
       <div>
-        <Image src="/logoBeAba.jpg" alt="Logo Be Aba" width={50} height={40} />
+        <Image src="/beAba-logo.png" alt="Logo Be Aba" width={50} height={40} />
       </div>
 
       <nav className="hidden md:flex gap-5 text-[var(--color-primary)] font-semibold">
-        <p className="cursor-pointer">Home</p>
-        <p className="cursor-pointer">Sobre Nós</p>
-        <p className="cursor-pointer">Quem Somos</p>
-        <p className="cursor-pointer">Contato</p>
+        <a href="#home" className="cursor-pointer">
+          Home
+        </a>
+        <a href="#servicos" className="cursor-pointer">
+          Serviços
+        </a>
+        <a href="#sobre" className="cursor-pointer">
+          Sobre nós
+        </a>
+        <a href="#depoimentos" className="cursor-pointer">
+          Depoimentos
+        </a>
+        <a href="#convenios" className="cursor-pointer">
+          Convênios
+        </a>
       </nav>
 
       <div className="md:hidden">
@@ -41,18 +52,28 @@ export default function Header() {
 
       {isOpen && (
         <div className="absolute top-[60px] right-0 bg-[var(--color-neutral-secondary)] w-1/2 h-screen flex flex-col gap-8 p-6 text-[var(--color-primary)] font-semibold rounded-bl-5xl md:hidden">
-          <p className="cursor-pointer" onClick={toggleMenu}>
+          <a href="#home" className="cursor-pointer" onClick={toggleMenu}>
             Home
-          </p>
-          <p className="cursor-pointer" onClick={toggleMenu}>
-            Sobre Nós
-          </p>
-          <p className="cursor-pointer" onClick={toggleMenu}>
-            Quem Somos
-          </p>
-          <p className="cursor-pointer" onClick={toggleMenu}>
+          </a>
+          <a href="#servicos" className="cursor-pointer" onClick={toggleMenu}>
+            Serviços
+          </a>
+          <a href="#sobre" className="cursor-pointer" onClick={toggleMenu}>
+            Sobre nós
+          </a>
+          <a
+            href="#depoimentos"
+            className="cursor-pointer"
+            onClick={toggleMenu}
+          >
+            Depoimentos
+          </a>
+          <a href="#convenios" className="cursor-pointer" onClick={toggleMenu}>
+            Convênios
+          </a>
+          <a href="#contato" className="cursor-pointer" onClick={toggleMenu}>
             Contato
-          </p>
+          </a>
         </div>
       )}
     </header>

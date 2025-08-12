@@ -4,23 +4,24 @@ import Image from "next/image";
 
 export default function Aba() {
   return (
-    <div className="flex flex-col gap-10 p-10 pt-0">
+    <div className="flex flex-col gap-10 p-5 pt-0">
       {/* Título principal */}
       <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)] text-center">
         Como atuamos
       </h1>
 
       {/* Texto de introdução */}
-      <p className="text-sm lg:text-[16px] text-neutral-700">
-        Utilizamos a{" "}
+      <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700 md:text-start text-center">
+        Na <span className="text-[#00b3b3] font-bold">beAba</span> utilizamos a{" "}
         <span className="text-[#FFA500] font-bold">
           ABA - Análise do Comportamento Aplicada
-        </span>
-        , uma abordagem terapêutica que apoia o desenvolvimento de crianças com
-        autismo de forma individualizada e acolhedora. Por meio de atividades
-        lúdicas e personalizadas, estimulamos habilidades como comunicação,
-        socialização e autonomia. Cada conquista é valorizada, com a
-        participação ativa da família em todo o processo.
+        </span>{" "}
+        para desenvolver habilidades e reduzir comportamentos desafiadores de
+        forma positiva. Nossa abordagem é naturalista, unindo estratégias
+        terapêuticas às brincadeiras e à rotina da criança, respeitando seus
+        interesses e individualidade. Trabalhamos lado a lado com a família para
+        que cada criança alcance seu máximo potencial, com autonomia e qualidade
+        de vida.
       </p>
 
       {/* Título seção benefícios */}
@@ -37,7 +38,7 @@ export default function Aba() {
             <div className="flex items-start gap-3 rounded-xl  md:h-[120px] w-[300px]  h-[80px]">
               <div className="relative flex items-center justify-center bg-[#FFB37A] rounded-xl  md:w-[60px] md:h-[60px] w-[50px] h-[50px] ">
                 <Image
-                  src="/people-talking.png"
+                  src="/check-mark.png"
                   alt="Comunicação"
                   fill
                   className="object-contain p-2 md:p-4"
@@ -45,11 +46,11 @@ export default function Aba() {
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-[#FFA500] font-bold lg:text-base text-sm">
-                  Comunicação e Socialização
+                  Resultados comprovados{" "}
                 </h3>
                 <p className="text-sm text-neutral-700">
                   {" "}
-                  Estímulo à comunicação e interação social.
+                  Baseados em evidências científicas.
                 </p>
               </div>
             </div>
@@ -66,11 +67,11 @@ export default function Aba() {
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-[#FFA500] font-bold lg:text-base text-sm">
-                  Autonomia no Dia a Dia
+                  Ensina novas habilidades
                 </h3>
                 <p className="text-sm text-neutral-700">
                   {" "}
-                  Independência em tarefas simples como se vestir e brincar.
+                  Estimula o aprendizado.{" "}
                 </p>
               </div>
             </div>
@@ -108,7 +109,7 @@ export default function Aba() {
               </div>
               <div className="flex-1 min-w-0">
                 <h3 className="text-[#FFA500] font-bold lg:text-base text-sm">
-                  Cuidado Personalizado
+                  Cuidado personalizado
                 </h3>
                 <p className="text-sm text-neutral-700">
                   Terapia no ritmo da criança, com apoio da família.

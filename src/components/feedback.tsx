@@ -12,32 +12,53 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Feedback() {
   const feedbacks = [
-    "A equipe da Be-Aba é incrível! Profissionais dedicados e sempre prontos para ajudar.",
-    "A clínica é um lugar acolhedor e seguro, onde me sinto à vontade para falar sobre meus desafios.",
-    "A equipe da Be-Aba é incrível! Profissionais dedicados e sempre prontos para ajudar.",
-    "A equipe da Be-Aba é incrível! Profissionais dedicados e sempre prontos para ajudar.",
-    "A equipe da Be-Aba é incrível! Profissionais dedicados e sempre prontos para ajudar.",
+    {
+      text: "O atendimento da Be-Aba transformou nossa rotina. A dedicação e carinho da equipe são incomparáveis.",
+      name: "Carla Nogueira",
+      role: "Mãe de paciente",
+    },
+    {
+      text: "Profissionais atenciosos, capacitados e sempre prontos para ouvir e orientar. Recomendo de olhos fechados!.",
+      name: "Rafael Martins ",
+      role: "Pai de paciente",
+    },
+    {
+      text: "Desde o primeiro atendimento, senti segurança e acolhimento. A clínica realmente se preocupa com cada detalhe",
+      name: "Ana Beatriz Lima",
+      role: "Cliente",
+    },
+
+    {
+      text: "O progresso que meu filho teve após iniciar o acompanhamento foi surpreendente. Sou muito grato à equipe.",
+      name: "Lucas Ferreira",
+      role: "Responsável por paciente",
+    },
+    {
+      text: "Um espaço acolhedor, profissionais incríveis e resultados visíveis. Não poderia estar mais satisfeita.",
+      name: "Fernanda Alves",
+      role: "Mãe de paciente",
+    },
   ];
 
   return (
     <section id="depoimentos">
-      <div className="flex flex-col items-center gap-10 p-10 pt-0">
-        <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
+      <div className="flex flex-col items-center gap-10 p-5 pt-0 ">
+        <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)] text-center">
           O que dizem sobre nós
         </h1>
 
         {/* Carrossel com 3 fotos visíveis */}
         <Carousel
           opts={{ align: "start" }}
-          className="w-[250px] md:w-[500px] lg:w-full "
+          className="w-[250px] md:w-[500px] lg:w-full  "
         >
           <CarouselContent>
-            {feedbacks.map((src, i) => (
+            {feedbacks.map(({ text, name, role }, i) => (
               <CarouselItem
                 key={i}
-                className="w-full mx-auto basis-1/1 md:basis-1/2 lg:basis-1/4"
+                className="w-full mx-auto bg-transparent basis-1/1 md:basis-1/2 lg:basis-1/4"
               >
-                <Card className="rounded-2xl shadow-lg h-[200px] md:h-[230px] lg:h-[250px] flex flex-col justify-center bg-[#fafafa]">
+                <Card className="rounded-2xl h-[250px]  flex flex-col justify-center bg-[#fafafa] ">
                   <CardContent className="flex flex-col items-center justify-center gap-5 p-5">
                     <Image
                       src="/quote (1).png"
@@ -47,13 +68,13 @@ export default function Feedback() {
                       className="object-contain"
                     />
                     <p className="text-sm text-center text-neutral-500">
-                      {src}
+                      {text}
                     </p>
                     <div className="self-start leading-tight">
                       <p className="text-sm font-semibold text-[#ffca64]">
-                        Maria
+                        {name}
                       </p>
-                      <p className="text-sm text-gray-500">Cliente</p>
+                      <p className="text-sm text-gray-500">{role}</p>
                     </div>
                   </CardContent>
                 </Card>

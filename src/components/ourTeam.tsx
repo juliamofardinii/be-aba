@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurTeam() {
   return (
-    <div className="flex flex-col p-10 pt-0">
+    <div className="flex flex-col p-5 pt-0">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
           Nossa equipe

@@ -13,20 +13,20 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function About() {
   const fotosClinica = [
     "/fotoClinica.jpg",
-    "/foto-clinica2.jpg",
-    "/fotoClinica3.jpg",
-    "/fotoClinica4.jpg",
     "/fotoClinica5.jpg",
+    "/fotoClinica3.jpg",
+    "/foto-clinica2.jpg",
+    "/fotoClinica4.jpg",
   ];
 
   return (
     <section id="sobre">
-      <div className="flex flex-col items-center gap-10 p-10 pt-0">
+      <div className="flex flex-col items-center gap-10 p-5 pt-0">
         <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
           Sobre nós
         </h1>
 
-        <div className="flex flex-col items-center w-full gap-12 md:flex-row">
+        <div className="flex flex-col items-center w-full gap-8 md:flex-row">
           {/* Carrossel com 3 fotos visíveis */}
           <Carousel
             opts={{ align: "start" }}
@@ -34,11 +34,8 @@ export default function About() {
           >
             <CarouselContent>
               {fotosClinica.map((src, i) => (
-                <CarouselItem
-                  key={i}
-                  className="pl-5 lg:basis-1/2 md:basis-1/1 basis-1/2"
-                >
-                  <Card className="relative overflow-hidden aspect-square rounded-2xl">
+                <CarouselItem key={i} className="pl-5 lg:basis-1/2 basis-1/1 ">
+                  <Card className="relative overflow-hidden aspect-auto rounded-2xl xl:h-[380px] lg:h-[350px] md:h-[320px] h-[320px]">
                     <CardContent className="p-0">
                       <Image
                         src={src}
@@ -63,22 +60,24 @@ export default function About() {
           </Carousel>
 
           {/* Texto ao lado */}
-          <div className="ml-6 xl:space-y-12 lg:space-y-8 space-y-3 md:space-y-12 max-w-[400px]">
-            <div className="xl:space-y-1 lg:space-y-2 md:space-y-4">
-              <h2 className="font-semibold sm:text-2xl lg:text-xl xl:text-[24px] text-neutral-700">
-                Lorem Ipsum is not{" "}
+          <div className="ml-6 xl:space-y-8 lg:space-y-8 space-y-3 max-w-[400px] ">
+            <div className=" xl:space-y-1 lg:space-y-2 md:space-y-1">
+              <h2 className="font-semibold text-[18px] lg:text-xl xl:text-[24px] text-neutral-700 ">
+                Onde <span className="text-[#FFA500] font-bold ">cuidado </span>
+                e{" "}
                 <span className="text-[#FFA500] font-bold ">
-                  simply random text
+                  desenvolvimento{" "}
                 </span>
+                caminham juntos
               </h2>
 
-              <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700">
-                If you are going to use a passage of Lorem Ipsum, you need to be
-                sure there isn’t.
+              <p className="text-sm  lg:text-[16px] text-neutral-700">
+                Na beAba, cada criança é acolhida de forma única, em um ambiente
+                seguro e estimulante, sempre em parceria com a família.
               </p>
             </div>
 
-            <div className="space-y-2 xl:space-y-8 lg:space-y-3 md:space-y-8">
+            <div className="space-y-2 xl:space-y-7 lg:space-y-3 md:space-y-5">
               <div className="flex flex-row items-center gap-8">
                 <div className="flex relative w-[60px] h-[40px]">
                   <Image
@@ -93,11 +92,11 @@ export default function About() {
                 </div>
                 <div>
                   <p className="text-base md:text-[14px] lg:text-[18px]">
-                    Contrary to popular
+                    Missão
                   </p>
-                  <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700">
-                    All the Lorem Ipsum generators on the Internet tend to
-                    repeat predefined chunks as necessary.
+                  <p className="text-sm md:text-[14px]  text-neutral-700">
+                    Conduzir cada criança a alcançar seu potencial, oferecendo
+                    um espaço seguro, estimulante e repleto de afeto.
                   </p>
                 </div>
               </div>
@@ -116,11 +115,11 @@ export default function About() {
                 </div>
                 <div>
                   <p className="text-base md:text-[14px] lg:text-[18px]">
-                    Contrary to popular
+                    Compromisso
                   </p>
-                  <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700">
-                    All the Lorem Ipsum generators on the Internet tend to
-                    repeat predefined chunks as necessary.
+                  <p className="text-sm md:text-[14px] text-neutral-700">
+                    Trabalhar lado a lado com os pais, adaptando cada plano de
+                    atendimento às necessidades e ao ritmo de cada família.
                   </p>
                 </div>
               </div>

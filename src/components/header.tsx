@@ -11,7 +11,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full h-[60px] bg-[var(--color-background)] flex justify-between items-center px-10 rounded-b-4xl relative z-50">
+    <header className="w-full h-[60px] bg-[var(--color-background)] flex justify-between items-center px-5 rounded-b-4xl relative z-50">
       <div>
         <Image src="/beAba-logo.png" alt="Logo Be Aba" width={50} height={40} />
       </div>

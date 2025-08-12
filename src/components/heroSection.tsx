@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 export default function HeroSection() {
   return (
     <section id="home">
-      <div className="relative grid items-center grid-cols-1 md:grid-cols-[1fr_1fr] gap-10  text-center md:text-left  bg-[var(--color-background)] p-10">
+      <div className="relative grid items-center grid-cols-1 md:grid-cols-[1fr_1fr] gap-10  text-center md:text-left  bg-[var(--color-background)] p-5">
         <div className="space-y-2 font-sans text-center w-full md:max-w-[500px] lg:max-w-[550px] xl:max-w-[800px] mx-auto">
           <h1 className="text-[28px] md:text-[36px] lg:text-[38px] xl:text-[40px] font-bold leading-tight text-left text-[var(--color-primary)]">
             Cuidar com propósito, desenvolver com{" "}

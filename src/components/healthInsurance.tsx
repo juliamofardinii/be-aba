@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 export default function HealthInsurance() {
   return (
     <section id="convenios">
-      <div className="flex flex-col items-center justify-center p-10 pt-0">
+      <div className="flex flex-col items-center justify-center p-5 pt-0">
         <div>
           <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
             Convênios

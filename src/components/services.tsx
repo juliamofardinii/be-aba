@@ -22,7 +22,7 @@ const services = [
 export default function Services() {
   return (
     <section id="servicos">
-      <div className="relative w-full p-10 pb-10 lg:pb-10 lg:p-0">
+      <div className="relative w-full p-5 pb-10 lg:pb-10 lg:p-0">
         <Image
           src="/sectionFundo.png"
           alt="Menina brincando"

@@ -21,7 +21,7 @@ export default function About() {
 
   return (
     <section id="sobre">
-      <div className="flex flex-col items-center gap-10 p-5 pt-0">
+      <div className="flex flex-col items-center gap-5 pt-5 xl:pt-10 xl:gap-10">
         <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
           Sobre nós
         </h1>
@@ -30,7 +30,7 @@ export default function About() {
           {/* Carrossel com 3 fotos visíveis */}
           <Carousel
             opts={{ align: "start" }}
-            className="w-full lg:max-w-[700px] md:max-w-[400px]"
+            className="md:w-full lg:max-w-[700px] md:max-w-[400px] w-[320px]"
           >
             <CarouselContent>
               {fotosClinica.map((src, i) => (

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurTeam() {
   return (
-    <div className="flex flex-col p-5 pt-0">
+    <div className="flex flex-col gap-5 pt-5 xl:pt-10">
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
           Nossa equipe
@@ -27,7 +27,7 @@ export default function OurTeam() {
 
       {/* Linhas para tablet: aparecem até o breakpoint lg */}
       <div className="flex-col hidden gap-10 md:flex xl:hidden">
-        <div className="flex flex-row justify-center pt-10 gap-15">
+        <div className="flex flex-row justify-center gap-15">
           {/* Membros 1, 2, 3 */}
           <TeamMember name="Henrique Mofardini" role="Sócio Administrador" />
           <TeamMember name="Luana Mofardini" role="Coordenadora X" />
@@ -41,7 +41,7 @@ export default function OurTeam() {
       </div>
 
       {/* Linha única para desktop: aparece só a partir do lg */}
-      <div className="flex-row justify-center hidden pt-10 xl:flex gap-15 ">
+      <div className="flex-row justify-center hidden xl:flex gap-15 ">
         <TeamMember name="Henrique Mofardini" role="Sócio Administrador" />
         <TeamMember name="Luana Mofardini" role="Coordenadora X" />
         <TeamMember name="Joana da Silva" role="Psicologa" />

@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function Aba() {
   return (
-    <div className="flex flex-col gap-10 p-5 pt-0">
+    <div className="flex flex-col gap-5 pt-5 xl:pt-10 xl:gap-10">
       {/* Título principal */}
       <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)] text-center">
         Como atuamos
       </h1>
 
       {/* Texto de introdução */}
-      <p className="text-sm md:text-[14px] lg:text-[16px] text-neutral-700 md:text-start text-center">
+      <p className="text-sm  lg:text-[16px] text-neutral-700 text-justify md:text-start">
         Na <span className="text-[#00b3b3] font-bold">beAba</span> utilizamos a{" "}
         <span className="text-[#FFA500] font-bold">
           ABA - Análise do Comportamento Aplicada
@@ -36,7 +36,7 @@ export default function Aba() {
           <div className="grid grid-cols-1 space-y-2 space-x-15 md:grid-cols-2">
             {/* Item 1 */}
             <div className="flex items-start gap-3 rounded-xl  md:h-[120px] w-[300px]  h-[80px]">
-              <div className="relative flex items-center justify-center bg-[#FFB37A] rounded-xl  md:w-[60px] md:h-[60px] w-[50px] h-[50px] ">
+              <div className="relative flex items-center justify-center bg-[#FFB37A] rounded-xl  md:w-[60px] md:h-[60px] w-[45px] h-[45px] ">
                 <Image
                   src="/check-mark.png"
                   alt="Comunicação"
@@ -57,7 +57,7 @@ export default function Aba() {
 
             {/* Item 2 */}
             <div className="flex items-start gap-3 rounded-xl md:h-[120px] w-[300px]  h-[80px]">
-              <div className=" relative flex items-center justify-center bg-[#FFD3AA] rounded-xl  md:w-[60px] md:h-[60px] w-[50px] h-[50px] ">
+              <div className=" relative flex items-center justify-center bg-[#FFD3AA] rounded-xl  md:w-[60px] md:h-[60px] w-[45px] h-[45px] ">
                 <Image
                   src="/hands-and-gestures.png"
                   alt="Autonomia"
@@ -78,7 +78,7 @@ export default function Aba() {
 
             {/* Item 3 */}
             <div className="  flex items-start gap-3 rounded-xl md:h-[120px] w-[300px]  h-[80px]">
-              <div className="relative flex items-center justify-center bg-[#3EC3D6] rounded-xl md:w-[60px] md:h-[60px] w-[50px] h-[50px] ">
+              <div className="relative flex items-center justify-center bg-[#3EC3D6] rounded-xl md:w-[60px] md:h-[60px] w-[45px] h-[45px] ">
                 <Image
                   src="/person.png"
                   alt="Bem-estar"
@@ -99,7 +99,7 @@ export default function Aba() {
 
             {/* Item 4 */}
             <div className=" flex items-start gap-3 rounded-xl md:h-[120px] w-[300px]  h-[80px]">
-              <div className="relative flex items-center justify-center bg-[#7FD5E1] rounded-xl  md:w-[60px] md:h-[60px] w-[50px] h-[50px] ">
+              <div className="relative flex items-center justify-center bg-[#7FD5E1] rounded-xl  md:w-[60px] md:h-[60px] w-[45px] h-[45px] ">
                 <Image
                   src="/family.png"
                   alt="Cuidado Personalizado"

@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-primary)] text-white px-6 py-5">
+    <footer className="bg-[var(--color-primary)] text-white px-6 py-5 ">
       <div className="max-w-[1272px] mx-auto flex flex-col items-center gap-6 text-center">
         <div>
           <h2 className="text-2xl font-bold">beAba</h2>

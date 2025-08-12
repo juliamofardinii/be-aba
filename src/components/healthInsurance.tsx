@@ -4,14 +4,14 @@ import { Button } from "./ui/button";
 export default function HealthInsurance() {
   return (
     <section id="convenios">
-      <div className="flex flex-col items-center justify-center p-5 pt-0">
+      <div className="flex flex-col items-center justify-center gap-5 py-5 xl:pt-10 xl:pb-10">
         <div>
           <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
             Convênios
           </h1>
         </div>
 
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 min-h-[110px] mt-6">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 min-h-[110px] ">
           {/* Texto e botão */}
           <div className="flex flex-col items-center justify-center gap-2 lg:items-start">
             <h1 className="sm:text-2xl lg:text-xl xl:text-[24px] font-semibold text-center text-neutral-700 lg:text-start">

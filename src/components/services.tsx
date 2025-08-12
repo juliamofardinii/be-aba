@@ -22,7 +22,7 @@ const services = [
 export default function Services() {
   return (
     <section id="servicos">
-      <div className="relative w-full p-5 pb-10 lg:pb-10 lg:p-0">
+      <div className="relative w-full gap-5 pt-5">
         <Image
           src="/sectionFundo.png"
           alt="Menina brincando"
@@ -46,13 +46,13 @@ export default function Services() {
                   className="px-0 md:basis-1/3 lg:basis-1/4 basis-1/2 "
                 >
                   <div className="flex flex-col items-center w-full">
-                    <div className="rounded-full bg-[var(--color-secondary)] lg:h-20 lg:w-20 md:w-15 md:h-15 flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <div className="rounded-full bg-[var(--color-secondary)] lg:h-20 lg:w-20 md:w-12 md:h-12  flex items-center justify-center hover:scale-105 transition-transform duration-300">
                       <Image
                         src={service.src}
                         alt={service.alt}
                         width={40}
                         height={40}
-                        className="object-contain md:w-10 md:h-10"
+                        className="object-contain md:w-8 md:h-8 lg:w-10 lg:h-10"
                       />
                     </div>
                     <span className="mt-2 font-semibold text-center md:text-[14px] text-neutral-700 text-sm sm:text-[16px] lg:text-[18px]">

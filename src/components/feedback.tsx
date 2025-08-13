@@ -50,7 +50,7 @@ export default function Feedback() {
         {/* Carrossel com 3 fotos visíveis */}
         <Carousel
           opts={{ align: "start" }}
-          className="w-[250px] md:w-[500px] lg:w-full  "
+          className="w-[250px] md:w-[500px] lg:w-full px-5  "
         >
           <CarouselContent>
             {feedbacks.map(({ text, name, role }, i) => (
@@ -82,10 +82,10 @@ export default function Feedback() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="absolute left-[-20px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+          <CarouselPrevious className="absolute left-[-2px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
             ‹
           </CarouselPrevious>
-          <CarouselNext className="absolute right-[-24px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+          <CarouselNext className="absolute right-[-2px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
             ›
           </CarouselNext>
         </Carousel>

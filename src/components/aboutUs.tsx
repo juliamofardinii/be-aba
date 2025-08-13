@@ -44,7 +44,7 @@ export default function About() {
           {/* Carrossel com 3 fotos visíveis */}
           <Carousel
             opts={{ align: "start" }}
-            className="md:w-full lg:max-w-[700px] md:max-w-[400px] w-[320px]"
+            className="md:w-full lg:max-w-[700px] md:max-w-[400px] w-[320px] px-5"
           >
             <CarouselContent>
               {fotosClinica.map((src, i) => (
@@ -56,7 +56,7 @@ export default function About() {
                         alt={`Foto clínica ${i + 1}`}
                         fill
                         quality={100}
-                        className="object-cover rounded-2xl"
+                        className="object-cover cursor-pointer rounded-2xl"
                         priority={i === 0}
                       />
                     </CardContent>
@@ -65,10 +65,10 @@ export default function About() {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="absolute left-[-20px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+            <CarouselPrevious className="absolute left-[-1px] z-10 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
               ‹
             </CarouselPrevious>
-            <CarouselNext className="absolute right-[-24px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+            <CarouselNext className="absolute right-[-5px] z-10  text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
               ›
             </CarouselNext>
           </Carousel>
@@ -142,7 +142,7 @@ export default function About() {
         </div>
         {modalOpen && modalImage && (
           <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-40"
+            className="fixed inset-0 z-50 flex items-center justify-center overflow-y-scroll bg-black/60"
             onClick={closeModal}
           >
             <div
@@ -151,20 +151,20 @@ export default function About() {
             >
               <button
                 onClick={closeModal}
-                className="absolute text-3xl font-bold text-gray-700 top-2 right-2 hover:text-gray-900"
+                className="absolute text-3xl font-bold text-gray-700 cursor-pointer top-3 right-5 hover:text-gray-900 "
                 aria-label="Fechar modal"
               >
                 ×
               </button>
 
-              <div className="w-[700px] h-[80vh]">
+              <div className=" md:h-[80vh] md:w-[60vh] w-[40vh] h-[55vh] ">
                 <Image
                   src={modalImage}
                   alt="Imagem ampliada"
                   width={700}
                   height={700}
                   priority
-                  className="object-contain w-full h-full rounded"
+                  className="object-contain w-full h-full rounded c"
                 />
               </div>
             </div>

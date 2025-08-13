@@ -1,6 +1,8 @@
 import "../styles/globals.css";
-
 import { Nunito } from "next/font/google";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import WhatsAppButton from "@/components/whatsAppButton";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -9,7 +11,10 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "Be Aba",
+  title: "beAba",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +24,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt" className={nunito.variable}>
-      <body>{children}</body>
+      <body>
+        {/* Conteúdo com largura limitada */}
+        <div className="max-w-[1272px] mx-auto px-4">
+          <Header />
+          <main>{children}</main>
+        </div>
+
+        {/* Footer ocupa toda a largura da tela */}
+        <Footer />
+
+        {/* Botão flutuante fora do layout centralizado */}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }

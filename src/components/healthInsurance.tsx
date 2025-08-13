@@ -1,0 +1,64 @@
+import Image from "next/image";
+
+export default function HealthInsurance() {
+  return (
+    <section id="convenios">
+      <div className="flex flex-col items-center justify-center gap-5 py-5 xl:pt-10 xl:pb-10">
+        <div>
+          <h1 className="text-[26px] md:text-4xl lg:text-[35px] font-bold text-[var(--color-primary)]">
+            Convênios
+          </h1>
+        </div>
+
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 min-h-[110px] ">
+          {/* Texto e botão */}
+          <div className="flex flex-col items-center justify-center gap-2 lg:items-start">
+            <h1 className="sm:text-2xl lg:text-xl xl:text-[24px] font-semibold text-center text-neutral-700 lg:text-start">
+              Atendemos também{" "}
+              <span className="text-[#FFA500] font-bold">particular!</span>
+            </h1>
+            <p className="max-w-xs text-sm md:text-[14px] lg:text-[16px] text-neutral-700 text-center lg:text-start">
+              Fale conosco e saiba mais sobre as formas de pagamento e
+              cobertura.
+            </p>
+            <a
+              href="https://wa.me/5515981355254"
+              className="inline-block  cursor-pointer bg-[#FE8A63] hover:bg-[#e56e4b] text-white px-8 py-4 rounded-md transition lg:px-7 lg:py-3 md:px-10 md:py-6 text-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="text-[14px] md:text-[16px] xl:text-[20px] text-white">
+                Entre em contato
+              </p>
+            </a>
+          </div>
+
+          {/* Logos dos convênios */}
+          <div className="flex flex-row gap-4 mt-4">
+            <div className="md:w-[200px] md:h-[130px] w-[150px] h-[80px] flex items-center justify-center rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 bg-white hover:shadow-[0_0_20px_rgba(90,88,88,0.5)]">
+              <Image
+                src="/funservLogo.png"
+                alt="logo funserv"
+                width={120}
+                height={70}
+                className="object-contain rounded"
+                priority
+              />
+            </div>
+
+            <div className="md:w-[200px] md:h-[130px] w-[150px] h-[80px] flex items-center justify-center rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 bg-white hover:shadow-[0_0_20px_rgba(90,88,88,0.5)]">
+              <Image
+                src="/gamasaude.png"
+                alt="logo gama"
+                width={120}
+                height={70}
+                className="object-contain rounded"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

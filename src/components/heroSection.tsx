@@ -1,6 +1,5 @@
 import "../styles/globals.css";
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 export default function HeroSection() {
   return (
@@ -16,15 +15,16 @@ export default function HeroSection() {
             para crianças com TEA, promovendo desenvolvimento, inclusão e
             qualidade de vida.
           </p>
-          <Button
-            className="mt-10 cursor-pointer bg-[#FE8A63] hover:bg-[#e56e4b] text-white px-8 py-4 rounded-md transition lg:px-12 lg:py-6 md:px-10 md:py-6 xl:py-8"
-            size={"lg"}
+          <a
+            href="https://wa.me/5515981355254"
+            className="inline-block mt-10 cursor-pointer bg-[#FE8A63] hover:bg-[#e56e4b] text-white px-8 py-4 rounded-md transition lg:px-8 lg:py-4 md:px-10 md:py-6 text-center"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <p className="text-[14px] md:text-[16px] xl:text-[20px] text-white  ">
-              {" "}
+            <p className="text-[14px] md:text-[16px] xl:text-[20px] text-white">
               Entre em contato
             </p>
-          </Button>
+          </a>
         </div>
 
         <div className="  mx-auto w-[350px] lg:w-full ">

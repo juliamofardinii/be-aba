@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import { useState } from "react";
 
 export default function About() {
   const fotosClinica = [
@@ -18,6 +19,19 @@ export default function About() {
     "/foto-clinica2.jpg",
     "/fotoClinica4.jpg",
   ];
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState<string | null>(null);
+
+  function openModal(src: string) {
+    setModalImage(src);
+    setModalOpen(true);
+  }
+
+  function closeModal() {
+    setModalImage(null);
+    setModalOpen(false);
+  }
 
   return (
     <section id="sobre">
@@ -36,7 +50,7 @@ export default function About() {
               {fotosClinica.map((src, i) => (
                 <CarouselItem key={i} className="pl-5 lg:basis-1/2 basis-1/1 ">
                   <Card className="relative overflow-hidden aspect-auto rounded-2xl xl:h-[380px] lg:h-[350px] md:h-[320px] h-[320px]">
-                    <CardContent className="p-0">
+                    <CardContent className="p-0" onClick={() => openModal(src)}>
                       <Image
                         src={src}
                         alt={`Foto clínica ${i + 1}`}
@@ -126,6 +140,36 @@ export default function About() {
             </div>
           </div>
         </div>
+        {modalOpen && modalImage && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800 bg-opacity-40"
+            onClick={closeModal}
+          >
+            <div
+              className="relative max-w-[90vw] max-h-[90vh] p-4 bg-white rounded-lg shadow-lg"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={closeModal}
+                className="absolute text-3xl font-bold text-gray-700 top-2 right-2 hover:text-gray-900"
+                aria-label="Fechar modal"
+              >
+                ×
+              </button>
+
+              <div className="w-[700px] h-[80vh]">
+                <Image
+                  src={modalImage}
+                  alt="Imagem ampliada"
+                  width={700}
+                  height={700}
+                  priority
+                  className="object-contain w-full h-full rounded"
+                />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

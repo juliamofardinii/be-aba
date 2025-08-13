@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 export default function HealthInsurance() {
   return (
@@ -22,11 +21,16 @@ export default function HealthInsurance() {
               Fale conosco e saiba mais sobre as formas de pagamento e
               cobertura.
             </p>
-            <Button className=" cursor-pointer w-fit bg-[#FE8A63] hover:bg-[#e56e4b] text-white px-8 py-5 rounded-md transition duration-300 flex align-center">
-              <p className="text-sm text-white md:text-base">
+            <a
+              href="https://wa.me/5515981355254"
+              className="inline-block  cursor-pointer bg-[#FE8A63] hover:bg-[#e56e4b] text-white px-8 py-4 rounded-md transition lg:px-7 lg:py-3 md:px-10 md:py-6 text-center"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="text-[14px] md:text-[16px] xl:text-[20px] text-white">
                 Entre em contato
               </p>
-            </Button>
+            </a>
           </div>
 
           {/* Logos dos convênios */}

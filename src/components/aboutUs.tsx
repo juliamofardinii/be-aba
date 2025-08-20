@@ -41,7 +41,6 @@ export default function About() {
         </h1>
 
         <div className="flex flex-col items-center w-full gap-8 md:flex-row">
-          {/* Carrossel com 3 fotos visíveis */}
           <Carousel
             opts={{ align: "start" }}
             className="md:w-full lg:max-w-[700px] md:max-w-[400px] w-[320px] px-5"
@@ -73,7 +72,6 @@ export default function About() {
             </CarouselNext>
           </Carousel>
 
-          {/* Texto ao lado */}
           <div className="md:ml-6 xl:space-y-15 lg:space-y-8 space-y-3 md:max-w-[500px] w-auto ">
             <div className=" xl:space-y-3 lg:space-y-2 md:space-y-1">
               <h2 className="font-semibold text-[18px] lg:text-xl xl:text-[24px] text-neutral-700 ">

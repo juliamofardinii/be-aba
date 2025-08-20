@@ -11,7 +11,6 @@ export default function HealthInsurance() {
         </div>
 
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-5 min-h-[110px] ">
-          {/* Texto e botão */}
           <div className="flex flex-col items-center justify-center gap-2 lg:items-start">
             <h1 className="sm:text-2xl lg:text-xl xl:text-[24px] font-semibold text-center text-neutral-700 lg:text-start">
               Atendemos também{" "}
@@ -33,7 +32,6 @@ export default function HealthInsurance() {
             </a>
           </div>
 
-          {/* Logos dos convênios */}
           <div className="flex flex-row gap-4 mt-4">
             <div className="md:w-[200px] md:h-[130px] w-[150px] h-[80px] flex items-center justify-center rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 bg-white hover:shadow-[0_0_20px_rgba(90,88,88,0.5)]">
               <Image

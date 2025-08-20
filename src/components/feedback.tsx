@@ -47,7 +47,6 @@ export default function Feedback() {
           O que dizem sobre nós
         </h1>
 
-        {/* Carrossel com 3 fotos visíveis */}
         <Carousel
           opts={{ align: "start" }}
           className="w-[250px] md:w-[500px] lg:w-full px-5  "

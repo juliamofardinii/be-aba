@@ -9,7 +9,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// Lista de serviços
 const services = [
   { src: "/brain.png", label: "Psicologia", alt: "Psico" },
   { src: "/pyramid.png", label: "Integração  Sensorial", alt: "Sensorial" },

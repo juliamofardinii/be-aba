@@ -15,7 +15,6 @@ export default function OurTeam() {
         </h1>
       </div>
 
-      {/* Mobile */}
       <div className="flex flex-col gap-3 md:hidden">
         <div className="flex flex-row justify-center gap-15 h-[220px]">
           <TeamMember {...team[0]} />
@@ -26,7 +25,6 @@ export default function OurTeam() {
         </div>
       </div>
 
-      {/* Tablet */}
       <div className="flex-col hidden gap-10 md:flex xl:hidden">
         <div className="flex flex-row justify-center gap-15">
           <TeamMember {...team[0]} />

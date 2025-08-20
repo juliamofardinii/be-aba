@@ -3,7 +3,7 @@
 import "../styles/globals.css";
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // ícones
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,6 @@ export default function Header() {
     ${isOpen ? "pb-6" : ""}
   `}
     >
-      {/* Linha superior: logo + menu desktop + ícone mobile */}
       <div className="flex w-full h-[60px] justify-between items-center">
         <div>
           <Image
@@ -64,7 +63,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Menu mobile expandido, em coluna */}
       {isOpen && (
         <nav className="flex flex-col gap-6 mt-4 text-[var(--color-primary)] font-semibold md:hidden text-center">
           <a href="#home" className="cursor-pointer" onClick={toggleMenu}>

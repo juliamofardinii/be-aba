@@ -25,16 +25,11 @@ export default function RootLayout({
   return (
     <html lang="pt" className={nunito.variable}>
       <body>
-        {/* Conteúdo com largura limitada */}
         <div className="max-w-[1272px] mx-auto px-4">
           <Header />
           <main>{children}</main>
         </div>
-
-        {/* Footer ocupa toda a largura da tela */}
         <Footer />
-
-        {/* Botão flutuante fora do layout centralizado */}
         <WhatsAppButton />
       </body>
     </html>

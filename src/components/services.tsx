@@ -67,7 +67,7 @@ export default function Services() {
           </Carousel>
         </div>
 
-        <div className="relative grid grid-cols-2 -translate-x-1/2 xl:absolute pb-15 sm:grid-cols-2 md:hidden xl:flex xl:justify-center xl:gap-2 xl:w-full xl:top-35 top-15 left-1/2 gap-y-6 w-max">
+        <div className="relative grid grid-cols-2 -translate-x-1/2 xl:absolute pb-15 sm:grid-cols-2 md:hidden xl:flex xl:justify-center xl:gap-2 xl:w-full xl:top-35 top-15 left-1/2 gap-y-6 w-max gap-x-5 md:gap-x-0">
           {services.map((service, index) => (
             <div
               key={index}

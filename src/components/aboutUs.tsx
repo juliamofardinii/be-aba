@@ -74,8 +74,8 @@ export default function About() {
           </Carousel>
 
           {/* Texto ao lado */}
-          <div className="ml-6 xl:space-y-8 lg:space-y-8 space-y-3 max-w-[400px] ">
-            <div className=" xl:space-y-1 lg:space-y-2 md:space-y-1">
+          <div className="md:ml-6 xl:space-y-15 lg:space-y-8 space-y-3 md:max-w-[500px] w-auto ">
+            <div className=" xl:space-y-3 lg:space-y-2 md:space-y-1">
               <h2 className="font-semibold text-[18px] lg:text-xl xl:text-[24px] text-neutral-700 ">
                 Onde <span className="text-[#FFA500] font-bold ">cuidado </span>
                 e{" "}
@@ -86,8 +86,9 @@ export default function About() {
               </h2>
 
               <p className="text-sm  lg:text-[16px] text-neutral-700">
-                Na beAba, cada criança é acolhida de forma única, em um ambiente
-                seguro e estimulante, sempre em parceria com a família.
+                Na <span className="text-[#00b3b3] font-bold">beAba</span>, cada
+                criança é acolhida de forma única, em um ambiente seguro e
+                estimulante, sempre em parceria com a família.
               </p>
             </div>
 

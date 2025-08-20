@@ -12,9 +12,13 @@ import {
 const services = [
   { src: "/brain.png", label: "Psicologia", alt: "Psico" },
   { src: "/pyramid.png", label: "Integração  Sensorial", alt: "Sensorial" },
-  { src: "/blocks (2).png", label: "T.O ABA", alt: "Blocos" },
+  { src: "/blocks (2).png", label: "Terapia Ocupacional ABA", alt: "Blocos" },
   { src: "/movimento.png", label: "Psicomotricidade", alt: "Movimento" },
-  { src: "/balao-de-fala.png", label: "Fono ABA", alt: "Balao de fala" },
+  {
+    src: "/balao-de-fala.png",
+    label: "Fonoudiologia ABA",
+    alt: "Balao de fala",
+  },
   { src: "/cerebro-humano.png", label: "Neuropsicologia", alt: "Neuro" },
 ];
 

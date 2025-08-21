@@ -16,7 +16,7 @@ const services = [
   { src: "/movimento.png", label: "Psicomotricidade", alt: "Movimento" },
   {
     src: "/balao-de-fala.png",
-    label: "Fonoudiologia ABA",
+    label: "Fonoaudiologia ABA",
     alt: "Balao de fala",
   },
   { src: "/cerebro-humano.png", label: "Neuropsicologia", alt: "Neuro" },

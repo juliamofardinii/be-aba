@@ -49,15 +49,15 @@ export default function Feedback() {
 
         <Carousel
           opts={{ align: "start" }}
-          className="w-[250px] md:w-[500px] lg:w-full px-5  "
+          className="w-full max-w-[500px] lg:max-w-full overflow-hidden"
         >
           <CarouselContent>
             {feedbacks.map(({ text, name, role }, i) => (
               <CarouselItem
                 key={i}
-                className="w-full mx-auto bg-transparent basis-1/1 md:basis-1/2 lg:basis-1/4"
+                className="w-full px-2 mx-auto bg-transparent basis-full md:basis-1/2 lg:basis-1/4"
               >
-                <Card className="rounded-2xl h-[250px]  flex flex-col justify-center bg-[#fafafa] ">
+                <Card className="rounded-2xl h-[250px] flex flex-col justify-center bg-[#fafafa]">
                   <CardContent className="flex flex-col items-center justify-center gap-5 p-5">
                     <Image
                       src="/quote (1).png"
@@ -81,10 +81,10 @@ export default function Feedback() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="absolute left-[-2px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+          <CarouselPrevious className="absolute z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none left-2 top-1/2 bg-amber-200">
             ‹
           </CarouselPrevious>
-          <CarouselNext className="absolute right-[-2px] z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+          <CarouselNext className="absolute z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none right-2 top-1/2 bg-amber-200">
             ›
           </CarouselNext>
         </Carousel>

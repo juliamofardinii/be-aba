@@ -43,12 +43,15 @@ export default function About() {
         <div className="flex flex-col items-center w-full gap-8 md:flex-row">
           <Carousel
             opts={{ align: "start" }}
-            className="md:w-full lg:max-w-[700px] md:max-w-[400px] w-[320px] px-5"
+            className="w-full md:max-w-[400px] lg:max-w-[700px] overflow-hidden"
           >
             <CarouselContent>
               {fotosClinica.map((src, i) => (
-                <CarouselItem key={i} className="pl-5 lg:basis-1/2 basis-1/1 ">
-                  <Card className="relative overflow-hidden aspect-auto rounded-2xl xl:h-[380px] lg:h-[350px] md:h-[320px] h-[320px]">
+                <CarouselItem
+                  key={i}
+                  className="w-full px-2 mx-auto bg-transparent basis-full md:basis-1/2 lg:basis-1/3"
+                >
+                  <Card className="relative overflow-hidden rounded-2xl xl:h-[380px] lg:h-[350px] md:h-[320px] h-[320px]">
                     <CardContent className="p-0" onClick={() => openModal(src)}>
                       <Image
                         src={src}
@@ -64,10 +67,10 @@ export default function About() {
               ))}
             </CarouselContent>
 
-            <CarouselPrevious className="absolute left-[-1px] z-10 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+            <CarouselPrevious className="absolute z-10 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none left-2 top-1/2 bg-amber-200">
               ‹
             </CarouselPrevious>
-            <CarouselNext className="absolute right-[-5px] z-10  text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none top-1/2 bg-amber-200">
+            <CarouselNext className="absolute z-10 p-2 text-xl font-bold -translate-y-1/2 rounded-full cursor-pointer select-none right-2 top-1/2 bg-amber-200">
               ›
             </CarouselNext>
           </Carousel>

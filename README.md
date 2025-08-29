@@ -1,22 +1,45 @@
-# 🚧 EM CONSTRUÇÃO 🚧
+Be-Aba Clínica Infantil
 
-Este projeto está sendo desenvolvido utilizando **Next.js** e **Tailwind CSS**.
+Descrição
+Este projeto é uma aplicação web institucional da clínica Be-Aba, com foco em apresentar os serviços, fotos da clínica e depoimentos de clientes. A aplicação possui um carrossel de imagens e cards de depoimentos, além de ser totalmente responsiva para dispositivos móveis e desktop.
 
-Ainda está em desenvolvimento, mas você já pode conferir o que está sendo feito e acompanhar as atualizações.
+💻 Tecnologias
 
----
+Next.js: v13 - Framework React para construção de aplicações web com renderização híbrida. Documentação do Next.js
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+React: v18 - Biblioteca JavaScript para construção de interfaces de usuário. Documentação do React
 
-## Getting Started
+TypeScript: v5 - Linguagem que adiciona tipagem estática ao JavaScript. Documentação do TypeScript
 
-First, run the development server:
+ShadCN UI - Biblioteca de componentes UI (Cards, Carousel). Documentação ShadCN UI
 
-```bash
+Image do Next.js - Componente para otimização de imagens. Documentação
+
+🚀 Instruções para Clonar e Executar o Projeto
+
+Clone o repositório:
+
+git clone <(https://github.com/juliamofardinii/be-aba.git)>
+
+
+Acesse o diretório do projeto:
+
+cd be-aba
+
+
+Instale as dependências:
+
+npm install
+# ou
+yarn install
+
+
+Inicie o servidor de desenvolvimento:
+
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+
+🔗 Link do site:
+[www.beeaba.com.br]([URL](https://www.beeaba.com.br/))

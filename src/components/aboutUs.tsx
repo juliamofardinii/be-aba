@@ -49,7 +49,9 @@ export default function About() {
               {fotosClinica.map((src, i) => (
                 <CarouselItem
                   key={i}
-                  className="w-full px-2 mx-auto bg-transparent basis-full md:basis-1/2 lg:basis-1/3"
+                  className={`w-full mx-auto bg-transparent basis-full md:basis-1/2 ${
+                    i === 0 ? "pl-4 md:pl-6 lg:pl-8" : "px-2"
+                  }`}
                 >
                   <Card className="relative overflow-hidden rounded-2xl xl:h-[380px] lg:h-[350px] md:h-[320px] h-[320px]">
                     <CardContent className="p-0" onClick={() => openModal(src)}>

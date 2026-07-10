@@ -1,4 +1,3 @@
-// @ts-ignore
 import { MessageCircle, Star, Sun, Heart } from "lucide-react";
 import "../styles/globals.css";
 import Image from "next/image";

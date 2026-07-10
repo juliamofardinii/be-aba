@@ -1,5 +1,4 @@
-import { MessageCircle, Star, Sun, Heart } from "lucide-react";
-import "../styles/globals.css";
+import { MessageCircle } from "lucide-react";
 import Image from "next/image";
 
 export default function HeroSection() {
